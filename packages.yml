@@ -1,0 +1,13 @@
+---
+- name:
+  hosts: localhost
+  tasks:
+    - name:
+      yum:
+        name: "{{item}}"
+        state: latest
+      loop:
+        - php 
+        - mariadb     
+        - httpd
+...

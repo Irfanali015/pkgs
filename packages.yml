@@ -1,6 +1,6 @@
 ---
 - name:
-  hosts: controlnode2.example.com
+  hosts: localhost
   tasks:
     - name:
       yum:
